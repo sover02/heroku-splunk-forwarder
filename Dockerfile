@@ -10,4 +10,5 @@ RUN /opt/splunk/bin/splunk set deploy-poll splunk2.6davids.com:8089 -auth admin:
 RUN printf "\n\n[deployment-client]\n\nclientName = container-$(hostname)\n" >> /opt/splunk/etc/system/local/deploymentclient.conf
 RUN /opt/splunk/bin/splunk enable listen 80 -auth admin:changeme
 RUN /opt/splunk/bin/splunk add forward-server splunk2.6davids.com:9997 -auth admin:changeme
-CMD ["/opt/splunk/bin/splunk", "restart"]
+RUN /opt/splunk/bin/splunk restart
+CMD ["tail", "-f", "/opt/splunk/var/log/splunk/splunkd.log"]
