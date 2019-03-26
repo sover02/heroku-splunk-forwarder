@@ -20,7 +20,7 @@ I want to deploy a splunk forwarder to heroku because it's free and in the cloud
 * Clone this repo
 * Deploy your container to heroku: https://devcenter.heroku.com/articles/container-registry-and-runtime
 * Log into your Splunk Deployment server and manage apps to deploy from there
-** Splunk `clientName`s are formated as `container-$(hostname)`, so you can configure serverclasses for your containers separatly
+* Splunk `clientName`s are formated as `container-$(hostname)`, so you can configure serverclasses for your containers separately
 
 ## To do:
 
