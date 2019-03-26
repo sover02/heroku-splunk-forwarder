@@ -1,6 +1,6 @@
 # heroku-splunk-forwarder
 
-I want to deploy a splunk forwarder to heroku - can use the HEC event collector to store data and push to an indexer in the cloud.
+I want to deploy a splunk forwarder to heroku because it's free and in the cloud. We can use the HEC event collector to store data and push to an indexer hosted elsewhere.
 
 ## What it does so far:
 
